@@ -18,7 +18,7 @@ const RandomQuote = () => {
                 <p className="text-center text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-100">Carregando...</p>
             ) : (
                 <p className="quote text-center text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold italic text-gray-100">
-                    "{quote}"
+                    {`"${quote}"`}
                 </p>
             )}
         </div>
