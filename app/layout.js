@@ -1,5 +1,6 @@
 import { PT_Serif } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = PT_Serif({
   weight: '700',
@@ -15,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
